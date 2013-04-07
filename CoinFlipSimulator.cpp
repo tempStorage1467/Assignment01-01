@@ -1,10 +1,14 @@
-//
-//  CoinFlipSimulator.cpp
-//  Consecutive Heads
-//
-//  Created by Eric Beach on 4/6/13.
-//
-//
+/*
+ * File: CoinFlipSimulator.cpp
+ * --------------------------
+ * Name: Eric Beach
+ * Section: [TODO: enter section leader here]
+ * Copyright 2013 <Eric Beach>
+ * This file contains the methods for CoinFlipSimulator.
+ *
+ * This file lightly linted using:
+ * http://google-styleguide.googlecode.com/svn/trunk/cpplint/cpplint.py
+ */
 
 #include <iostream>
 #include <vector>
@@ -14,6 +18,10 @@
 
 using namespace std;
 
+/*
+ * Simulate the flipping of a coin and return CoinValue to represent the
+ *   outcome.
+ */
 CoinValue CoinFlipSimulator::simulateCoinFlip() {
     if (randomInteger(0, 1) == 1) {
         return HEADS;
@@ -21,7 +29,19 @@ CoinValue CoinFlipSimulator::simulateCoinFlip() {
         return TAILS;
     }
 }
-    
+
+/*
+ * Get the number of times the coin had to be flipped before there were
+ *   a total of DESIRED_NUM_CONSECUTIVE_HEADS heads in a row.
+ */
+int CoinFlipSimulator::getNumFlipsRequired() {
+    return numFlipsRequired;
+}
+
+/*
+ * Determine the number of times a coin needs to be flipped in order to
+ *   obtain DESIRED_NUM_CONSECUTIVE_HEADS heads in a row.
+ */
 void CoinFlipSimulator::determineNumFlipsRequired() {
     flipOutcomes.clear();
     int consecutiveHeads = 0;
@@ -37,6 +57,9 @@ void CoinFlipSimulator::determineNumFlipsRequired() {
     }
 }
 
+/*
+ * Print the results of the most recent coin flipping simulation to the console.
+ */
 void CoinFlipSimulator::printSimulation() {
     for (int i = 0; i < flipOutcomes.size(); i++) {
         if (flipOutcomes[i] == HEADS) {
@@ -48,7 +71,11 @@ void CoinFlipSimulator::printSimulation() {
     cout << "It took " << numFlipsRequired << " flips to get "
         << DESIRED_NUM_CONSECUTIVE_HEADS << " consecutive heads." << endl;
 }
-    
+
+/*
+ * Set the random number seed that controls the coin flip simulation.
+ *    This is useful for testing.
+ */
 void CoinFlipSimulator::setFlipSeed(int seed) {
     setRandomSeed(seed);
 }
