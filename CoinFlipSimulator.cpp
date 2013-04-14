@@ -2,8 +2,8 @@
  * File: CoinFlipSimulator.cpp
  * --------------------------
  * Name: Eric Beach
- * Section: [TODO: enter section leader here]
- * Copyright 2013 <Eric Beach>
+ * Section: SCPD, Aaron Broder <abroder@stanford.edu>
+ * Copyright 2013 Eric Beach <ebeach@google.com>
  * This file contains the methods for CoinFlipSimulator.
  *
  * This file lightly linted using:
@@ -58,7 +58,8 @@ void CoinFlipSimulator::determineNumFlipsRequired() {
 }
 
 /*
- * Print the results of the most recent coin flipping simulation to the console.
+ * Print the results of the most recent coin flipping simulation
+ *   to the console.
  */
 void CoinFlipSimulator::printSimulation() {
     for (int i = 0; i < flipOutcomes.size(); i++) {

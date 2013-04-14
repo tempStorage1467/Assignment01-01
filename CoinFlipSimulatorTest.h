@@ -2,8 +2,8 @@
  * File: CoinFlipSimulatorTest.h
  * --------------------------
  * Name: Eric Beach
- * Section: [TODO: enter section leader here]
- * Copyright 2013 <Eric Beach>
+ * Section: SCPD, Aaron Broder <abroder@stanford.edu>
+ * Copyright 2013 Eric Beach <ebeach@google.com>
  * Header file containing prototype information for the CoinFlipSimulatorTes
  * class.
  *
@@ -23,6 +23,7 @@ class CoinFlipSimulatorTest {
  public:
     // Method to execute the tests in this test suite.
     void runTests();
+
  private:
     // Helper method to test whether two integers equal.
     bool assertEquals(int expected, int received);

@@ -2,8 +2,8 @@
  * File: CoinFlipSimulator.h
  * --------------------------
  * Name: Eric Beach
- * Section: [TODO: enter section leader here]
- * Copyright 2013 <Eric Beach>
+ * Section: SCPD, Aaron Broder <abroder@stanford.edu>
+ * Copyright 2013 Eric Beach <ebeach@google.com>
  * This file prototypes the CoinFlipSimulator class.
  *
  * This file lightly linted using:
