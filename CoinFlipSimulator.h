@@ -4,6 +4,7 @@
  * Name: Eric Beach
  * Section: SCPD, Aaron Broder <abroder@stanford.edu>
  * Copyright 2013 Eric Beach <ebeach@google.com>
+ * Assignment 1 - Pt. 1 - Consecutive Heads
  * This file prototypes the CoinFlipSimulator class.
  *
  * This file lightly linted using:

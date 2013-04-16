@@ -4,6 +4,7 @@
  * Name: Eric Beach
  * Section: SCPD, Aaron Broder <abroder@stanford.edu>
  * Copyright 2013 Eric Beach <ebeach@google.com>
+ * Assignment 1 - Pt. 1 - Consecutive Heads
  * This file is the starter project for the Consecutive Heads problem.
  * This file can run a test suite for the project and then execute
  * the coin flip simulation, printing out the result.
